@@ -1,0 +1,147 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-palestras {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card-palestras-ministrantrantes {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #000000;
+  border-radius: 1.25rem;
+}
+.card-palestras-ministrantrantes--grupoA {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #000000;
+  border-radius: 1.25rem;
+}
+
+.card-palestras-container {
+  height: 80%;
+}
+
+hr {
+  border-color: #E3E3E3;
+}
+
+.card-palestras-dia {
+  font-size: 1.4rem;
+  color: #001C49;
+}
+
+.card-palestras-assunto {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.card-palestras-palestrante {
+  margin-top: 0.5rem;
+}
+
+.card-palestras-sobre {
+  margin-top: 0.5rem;
+}
+
+.card-palestras-horario {
+  margin-top: 0.25rem ;
+  font-weight: 600;
+  color: #FF0000;
+}
+
+p {
+  text-align: justify;
+}
+
+.card-palestras-footer{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.footer-palestras-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.5rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  margin-top: 0.50rem;
+  background: var(--background-button);
+}
+
+.footer-palestras-button:hover {
+  filter: brightness(0.9);
+}
+
+.button-yt {
+  margin-right: 0.25rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0 0.75rem;
+  }
+
+  .card-palestras {
+    flex-direction: column;
+  }
+
+  .card-palestras-ministrantrantes {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.50rem;
+  }
+
+  .card-palestras-ministrantrantes--grupoA {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.50rem;
+  }
+
+  .card-palestras-dia {
+    font-size: 1rem;
+  }
+
+  .card-palestras-assunto {
+    line-height: 20px;
+    text-align: justify;
+  }
+
+}
+@media screen and (max-width: 1024px) {
+  .card-palestras {
+    flex-direction: column;
+  }
+
+  .card-palestras-ministrantrantes {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.50rem;
+  }
+}

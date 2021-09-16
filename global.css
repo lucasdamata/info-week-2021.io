@@ -1,5 +1,7 @@
 :root {
-  --background-header: #00427C
+  --background: #F4F4F4;
+  --background-button: #CC0000;
+  
 }
 
 * {
@@ -19,6 +21,7 @@ html {
 }
 
 body {
+  background: var(--background);
   -webkit-font-smoothing: antialiased;
 }
 
