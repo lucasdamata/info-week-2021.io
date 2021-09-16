@@ -1,0 +1,19 @@
+.cabecalho {
+  display: flex;
+  height: px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho-logo-image {
+  height: 60px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .cabecalho-logo-image {
+    width: auto;
+    height: 40px;
+  }
+}
