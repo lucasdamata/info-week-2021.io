@@ -49,6 +49,7 @@
 
   .footer-empresas {
     flex-direction: column;
+    padding: 5px;
   }
 
   .footer-empresas--unipam {
