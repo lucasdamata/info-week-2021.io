@@ -1,6 +1,5 @@
 .footer {
   width: 100%;
-  height: 150px;
   background: white;
   color: #001C4F;
   box-shadow: 0 -5px 8px 1px #CCC;
@@ -11,9 +10,21 @@
   height: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.empresas-content {
+  display: flex;
+  width: 50%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.footer-titulo-apoiadores  {
+  margin-top: 1rem;
 }
 
 .footer-empresas {
@@ -22,6 +33,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-empresas--unipam {
@@ -38,7 +50,41 @@
 }
 .footer-empresas--obers {
   width: 170px;
-  height: 70px;
+  height: 80px;
+}
+
+.realizacao-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.footer-titulo-realizacao  {
+  margin-top: 1rem;
+}
+
+.footer-realizacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 1.25rem;
+}
+
+.footer-realizacao-cubo {
+  width: 100px;
+  height: 100px;
+}
+
+.footer-realizacao-cursos {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #001C4F;
+  margin: 1rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 720px) {
@@ -47,9 +93,14 @@
     height: auto;
   }
 
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer-empresas {
     flex-direction: column;
-    padding: 5px;
+    flex-wrap: nowrap;
   }
 
   .footer-empresas--unipam {
@@ -67,5 +118,13 @@
 
   .footer-empresas--auma {
     margin-bottom: 10px;
+  }
+
+  .realizacao-content {
+    width: 100%;
+  }
+
+  .footer-realizacao-cursos {
+    text-align: center;
   }
 }

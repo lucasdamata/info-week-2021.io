@@ -2,17 +2,57 @@
   width: 80%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-incricao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.inscricao-frase {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.incricao-gratuita {
+  color: #569BC9;
+}
+
+.incricao-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 0.50rem;
+  color: #fff;
+  background: #001C49;
+  transition: 0.3s;
+}
+
+.incricao-button:hover {
+  background: #0c69b4;
 }
 
 .card-palestras {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.card-palestras-ministrantrantes {
+.card-palestras-ministrantrantes--grupo {
   background: #FFF;
   display: flex;
   flex-direction: column;
@@ -23,7 +63,7 @@
   border: 1px solid #000000;
   border-radius: 1.25rem;
 }
-.card-palestras-ministrantrantes--grupoA {
+.card-palestras-ministrantrantes {
   background: #FFF;
   display: flex;
   flex-direction: column;
@@ -60,16 +100,16 @@ hr {
 
 .card-palestras-sobre {
   margin-top: 0.5rem;
+  text-align: justify;
+}
+.card-palestras-sobre strong{
+  text-align: start;
 }
 
 .card-palestras-horario {
   margin-top: 0.25rem ;
   font-weight: 600;
   color: #FF0000;
-}
-
-p {
-  text-align: justify;
 }
 
 .card-palestras-footer{
@@ -108,17 +148,19 @@ p {
     padding: 0 0.75rem;
   }
 
+  .inscricao-frase {
+    font-size: 1rem;
+  }
+
+  .card-incricao {
+    flex-direction: column;
+  }
+
   .card-palestras {
     flex-direction: column;
   }
 
   .card-palestras-ministrantrantes {
-    width: 100%;
-    margin: 0;
-    margin-top: 0.50rem;
-  }
-
-  .card-palestras-ministrantrantes--grupoA {
     width: 100%;
     margin: 0;
     margin-top: 0.50rem;
